@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WinnerEducation</title>
+    <!-- <link href="/dist/output.css" rel="stylesheet" /> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .accordion-content {
+        display: none;
+      }
+
+      .accordion-item.active .accordion-content {
+        display: block;
+      }
+
+      .accordion-button::after {
+        content: "▼";
+        display: inline-block;
+        margin-left: 0.5rem;
+        transform: rotate(0deg);
+        transition: transform 0.2s ease-in-out;
+      }
+
+      .accordion-item.active .accordion-button::after {
+        transform: rotate(180deg);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <section class="p-10 text-black">
+      <div
+        class="grid grid-rows-1 md:grid-cols-3 place-items-center place-content-center bg-gray-800 p-5 gap-5"
+      >
+        <div>
+          <a href="#" class="text-white font-bold text-4xl">WinnerEducation</a>
+        </div>
+        <div class="md:flex">
+          <a
+            href="#"
+            class="block text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+            >Home</a
+          >
+          <a
+            href="#"
+            class="block text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+            >Course</a
+          >
+          <a
+            href="#"
+            class="block text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+            >Deals</a
+          >
+          <a
+            href="#"
+            class="block text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+            >Success</a
+          >
+          <a
+            href="#"
+            class="block text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+            >About</a
+          >
+        </div>
+        <div>
+          <button
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+          >
+            Register
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Banner -->
+    <section>
+      <div class="relative p-10 rounded-md">
+        <img src="./assets/images/cover/banner.jpg" alt="Background Image" />
+
+        <div
+          class="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center"
+        >
+          <h1 class="text-white text-2xl md:text-4xl font-bold">
+            Get Started Digital Learning
+          </h1>
+          <p
+            class="text-white text-lg md:text-2xl font-bold text-center md:w-1/2"
+          >
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout.
+          </p>
+          <button
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4"
+          >
+            Get Started
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Popular Section -->
+    <section class="p-10">
+      <div class="flex items-center justify-center">
+        <div class="w-3/4">
+          <h1 class="text-3xl font-bold text-center">
+            Discover Our Popular Courses
+          </h1>
+          <p class="text-xl font-bold text-center">
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout.
+          </p>
+        </div>
+      </div>
+
+      <!-- Cards -->
+      <div class="my-10 grid md:grid-cols-2 gap-5">
+        <!-- 1 -->
+        <div class="flex items-center border-2 rounded-md">
+          <div class="mr-5">
+            <img src="/src/assets/images/course/course-1.png" />
+          </div>
+          <div>
+            <h1>Fundamental Of UI/UX Design</h1>
+            <p>
+              Some quick example text to build on the card title and make up the
+              bulk of the card.
+            </p>
+            <p>Price: 20$</p>
+          </div>
+        </div>
+        <!-- 2 -->
+        <div class="flex items-center border-2 rounded-md">
+          <div class="mr-5">
+            <img src="/src/assets/images/course/course-2.png" />
+          </div>
+          <div>
+            <h1>Fundamental Of UI/UX Design</h1>
+            <p>
+              Some quick example text to build on the card title and make up the
+              bulk of the card.
+            </p>
+            <p>Price: 20$</p>
+          </div>
+        </div>
+        <!-- 3 -->
+        <div class="flex items-center border-2 rounded-md">
+          <div class="mr-5">
+            <img src="/src/assets/images/course/course-3.png" />
+          </div>
+          <div>
+            <h1>Fundamental Of UI/UX Design</h1>
+            <p>
+              Some quick example text to build on the card title and make up the
+              bulk of the card.
+            </p>
+            <p>Price: 20$</p>
+          </div>
+        </div>
+        <!-- 4 -->
+        <div class="flex items-center border-2 rounded-md">
+          <div class="mr-5">
+            <img src="/src/assets/images/course/course-4.png" />
+          </div>
+          <div>
+            <h1>Fundamental Of UI/UX Design</h1>
+            <p>
+              Some quick example text to build on the card title and make up the
+              bulk of the card.
+            </p>
+            <p>Price: 20$</p>
+          </div>
+        </div>
+        <!-- 5 -->
+        <div class="flex items-center border-2 rounded-md">
+          <div class="mr-5">
+            <img src="/src/assets/images/course/course-5.png" />
+          </div>
+          <div>
+            <h1>Fundamental Of UI/UX Design</h1>
+            <p>
+              Some quick example text to build on the card title and make up the
+              bulk of the card.
+            </p>
+            <p>Price: 20$</p>
+          </div>
+        </div>
+        <!-- 6 -->
+        <div class="flex items-center border-2 rounded-md">
+          <div class="mr-5">
+            <img src="/src/assets/images/course/course-6.png" />
+          </div>
+          <div>
+            <h1>Fundamental Of UI/UX Design</h1>
+            <p>
+              Some quick example text to build on the card title and make up the
+              bulk of the card.
+            </p>
+            <p>Price: 20$</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- See More Button -->
+      <div class="flex justify-center">
+        <button
+          class="inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4 md:mt-0 text-center"
+        >
+          See More Courses
+        </button>
+      </div>
+    </section>
+
+    <!-- Explore Section -->
+    <section>
+      <div class="flex flex-col md:flex-row p-10">
+        <div class="w-full md:w-1/2 md:order-last">
+          <img
+            src="./assets/images/working.png"
+            alt="Banner Image"
+            class="max-w-full"
+          />
+        </div>
+        <div
+          class="w-full md:w-1/2 flex flex-col justify-center px-4 bg-blue-200"
+        >
+          <h1 class="text-3xl mb-4 font-bold">
+            Explore The E-learning Institute
+          </h1>
+          <p class="mb-4">
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, by injected
+            humour, or randomised words which don't look even slightly
+            believable. If you are going to use a passage of Lorem Ipsum, you
+            need to be sure.
+          </p>
+          <p class="mb-4">
+            Anything embarrassing hidden in the middle of text. All the Lorem
+            Ipsum generators on the Internet tend to repeat predefined.
+          </p>
+
+          <div>
+            <div class="flex gap-3 items-center justify-between">
+              <div>
+                <h1 class="font-bold text-2xl">3.2K+</h1>
+                <p class="text-xl">Online Course</p>
+              </div>
+              <div>
+                <h1 class="font-bold text-2xl">600</h1>
+                <p class="text-xl">Expert Member</p>
+              </div>
+              <div>
+                <h1 class="font-bold text-2xl">1K+</h1>
+                <p class="text-xl">Ratings and Reviews</p>
+              </div>
+            </div>
+            <button
+              class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            >
+              Read More
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Short Banner  -->
+    <section class="p-10">
+      <div
+        class="bg-blue-500 p-8 md:flex items-center justify-between rounded-md"
+      >
+        <div>
+          <h1 class="text-white text-4xl font-bold mb-4">Ready to join?</h1>
+          <p class="text-white text-lg mb-4 md:w-1/2">
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout.
+          </p>
+        </div>
+        <div>
+          <button class="bg-white text-blue-500 font-bold py-2 px-4 rounded">
+            Register Now
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Successful Students -->
+    <section>
+      <div class="grid md:grid-cols-3 lg:grid-cols-4 gap-5 p-10 justify-center">
+        <!-- Card 1 -->
+        <div class="max-w-sm bg-white shadow-lg rounded-lg overflow-hidden">
+          <img
+            class="w-full"
+            src="./assets/images/student/student-1.png"
+            alt="Card Image"
+          />
+          <div class="p-4">
+            <h2 class="text-xl font-semibold">Coder Ismail</h2>
+            <p class="mt-2 text-gray-600">UX/UI DESIGNER</p>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="max-w-sm bg-white shadow-lg rounded-lg overflow-hidden">
+          <img
+            class="w-full"
+            src="./assets/images/student/student-3.png"
+            alt="Card Image"
+          />
+          <div class="p-4">
+            <h2 class="text-xl font-semibold">Hasaan</h2>
+            <p class="mt-2 text-gray-600">Programmer</p>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="max-w-sm bg-white shadow-lg rounded-lg overflow-hidden">
+          <img
+            class="w-full"
+            src="./assets/images/student/student-1.png"
+            alt="Card Image"
+          />
+          <div class="p-4">
+            <h2 class="text-xl font-semibold">Shakib</h2>
+            <p class="mt-2 text-gray-600">Web Developer</p>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="max-w-sm bg-white shadow-lg rounded-lg overflow-hidden">
+          <img
+            class="w-full"
+            src="./assets/images/student/student-3.png"
+            alt="Card Image"
+          />
+          <div class="p-4">
+            <h2 class="text-xl font-semibold">Nihad</h2>
+            <p class="mt-2 text-gray-600">Photographer</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex justify-center items-center">
+        <button
+          class="inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4 md:mt-0 text-center"
+        >
+          View All
+        </button>
+      </div>
+    </section>
+
+    <!-- Feedbacks -->
+    <section>
+      <div class="grid md:grid-cols-2 gap-5 p-10">
+        <!-- Card-1 -->
+        <div class="border-2 p-5 rounded-md">
+          <!-- Comma and Rating -->
+          <div class="flex justify-between">
+            <!-- Comma Image -->
+            <div>
+              <img src="./assets/images/comma.png" alt="commaImg" />
+            </div>
+            <!-- Ratings -->
+            <div>
+              <div class="flex items-center mt-2">
+                <svg
+                  class="w-4 h-4 fill-current text-yellow-500 mr-1"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 1L15.09 8.45L23 9.27L17 14.14L18.18 22L12 18.77L5.82 22L7 14.14L1 9.27L8.91 8.45L12 1Z"
+                  />
+                </svg>
+                <svg
+                  class="w-4 h-4 fill-current text-yellow-500 mr-1"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 1L15.09 8.45L23 9.27L17 14.14L18.18 22L12 18.77L5.82 22L7 14.14L1 9.27L8.91 8.45L12 1Z"
+                  />
+                </svg>
+                <svg
+                  class="w-4 h-4 fill-current text-yellow-500 mr-1"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 1L15.09 8.45L23 9.27L17 14.14L18.18 22L12 18.77L5.82 22L7 14.14L1 9.27L8.91 8.45L12 1Z"
+                  />
+                </svg>
+                <svg
+                  class="w-4 h-4 fill-current text-yellow-500 mr-1"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 1L15.09 8.45L23 9.27L17 14.14L18.18 22L12 18.77L5.82 22L7 14.14L1 9.27L8.91 8.45L12 1Z"
+                  />
+                </svg>
+                <svg
+                  class="w-4 h-4 fill-current text-yellow-500 mr-1"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 1L15.09 8.45L23 9.27L17 14.14L18.18 22L12 18.77L5.82 22L7 14.14L1 9.27L8.91 8.45L12 1Z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <!-- Text -->
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+            similique non vitae laboriosam totam eaque minima optio perferendis
+            amet modi.
+          </p>
+          <!-- Avater -->
+          <div class="flex">
+            <div>
+              <img
+                class="w-12 h-12 rounded-full mr-4"
+                src="./assets/images/student/student-1.png"
+                alt="Avatar"
+              />
+            </div>
+            <div>
+              <h2 class="font-bold">John Doe</h2>
+              <p>UX/UI Designer</p>
+            </div>
+          </div>
+        </div>
+        <!-- Card-2 -->
+        <div class="border-2 p-5 rounded-md">
+          <!-- Comma and Rating -->
+          <div class="flex justify-between">
+            <!-- Comma Image -->
+            <div>
+              <img src="./assets/images/comma.png" alt="commaImg" />
+            </div>
+            <!-- Ratings -->
+            <div>
+              <div class="flex items-center mt-2">
+                <svg
+                  class="w-4 h-4 fill-current text-yellow-500 mr-1"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 1L15.09 8.45L23 9.27L17 14.14L18.18 22L12 18.77L5.82 22L7 14.14L1 9.27L8.91 8.45L12 1Z"
+                  />
+                </svg>
+                <svg
+                  class="w-4 h-4 fill-current text-yellow-500 mr-1"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 1L15.09 8.45L23 9.27L17 14.14L18.18 22L12 18.77L5.82 22L7 14.14L1 9.27L8.91 8.45L12 1Z"
+                  />
+                </svg>
+                <svg
+                  class="w-4 h-4 fill-current text-yellow-500 mr-1"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 1L15.09 8.45L23 9.27L17 14.14L18.18 22L12 18.77L5.82 22L7 14.14L1 9.27L8.91 8.45L12 1Z"
+                  />
+                </svg>
+                <svg
+                  class="w-4 h-4 fill-current text-yellow-500 mr-1"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 1L15.09 8.45L23 9.27L17 14.14L18.18 22L12 18.77L5.82 22L7 14.14L1 9.27L8.91 8.45L12 1Z"
+                  />
+                </svg>
+                <svg
+                  class="w-4 h-4 fill-current text-yellow-500 mr-1"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 1L15.09 8.45L23 9.27L17 14.14L18.18 22L12 18.77L5.82 22L7 14.14L1 9.27L8.91 8.45L12 1Z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <!-- Text -->
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+            similique non vitae laboriosam totam eaque minima optio perferendis
+            amet modi.
+          </p>
+          <!-- Avater -->
+          <div class="flex">
+            <div>
+              <img
+                class="w-12 h-12 rounded-full mr-4"
+                src="./assets/images/student/student-1.png"
+                alt="Avatar"
+              />
+            </div>
+            <div>
+              <h2 class="font-bold">John Doe</h2>
+              <p>UX/UI Designer</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section>
+      <div class="container mx-auto p-10 text-center">
+        <div class="text-center my-4">
+          <h1 class="text-3xl font-bold mb-4">Frequently Asked Questions</h1>
+          <h1 class="text-xl">
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout.
+          </h1>
+        </div>
+
+        <div class="accordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button">What is Tailwind CSS?</button>
+            </h2>
+            <div class="accordion-content">
+              <p>
+                Tailwind CSS is a highly customizable, low-level CSS framework
+                that provides utility classes to build modern user interfaces.
+                It promotes a utility-first approach, where you compose your UI
+                using pre-defined utility classes, eliminating the need to write
+                custom CSS.
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button">What is React JS?</button>
+            </h2>
+            <div class="accordion-content">
+              <p>
+                Tailwind CSS is a highly customizable, low-level CSS framework
+                that provides utility classes to build modern user interfaces.
+                It promotes a utility-first approach, where you compose your UI
+                using pre-defined utility classes, eliminating the need to write
+                custom CSS.
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button">What is Bootstrap?</button>
+            </h2>
+            <div class="accordion-content">
+              <p>
+                Tailwind CSS is a highly customizable, low-level CSS framework
+                that provides utility classes to build modern user interfaces.
+                It promotes a utility-first approach, where you compose your UI
+                using pre-defined utility classes, eliminating the need to write
+                custom CSS.
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button">What is HTML?</button>
+            </h2>
+            <div class="accordion-content">
+              <p>
+                Tailwind CSS is a highly customizable, low-level CSS framework
+                that provides utility classes to build modern user interfaces.
+                It promotes a utility-first approach, where you compose your UI
+                using pre-defined utility classes, eliminating the need to write
+                custom CSS.
+              </p>
+            </div>
+          </div>
+
+          <!-- Add more FAQ items as needed -->
+        </div>
+      </div>
+
+      <script>
+        const accordionItems = document.querySelectorAll(".accordion-item");
+
+        function toggleAccordion() {
+          this.classList.toggle("active");
+        }
+
+        accordionItems.forEach((item) =>
+          item.addEventListener("click", toggleAccordion)
+        );
+      </script>
+    </section>
+
+    <!-- Companies -->
+    <section class="p-8">
+      <h1 class="text-2xl font-bold uppercase text-center my-5">
+        Trusted by over 600 companies.
+      </h1>
+      <div class="grid md:grid-cols-6 gap-5 place-items-center">
+        <img src="./assets/images/company/company-1.png" alt="companyLogo" />
+        <img src="./assets/images/company/company-2.png" alt="companyLogo" />
+        <img src="./assets/images/company/company-3.png" alt="companyLogo" />
+        <img src="./assets/images/company/company-4.png" alt="companyLogo" />
+        <img src="./assets/images/company/company-5.png" alt="companyLogo" />
+        <img src="./assets/images/company/company-6.png" alt="companyLogo" />
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white">
+      <div class="flex flex-col items-center text-center">
+        <div>
+          <p class="text-2xl">&copy; Pro Edu</p>
+          <p>Office 41, Zawaya Buildin, Ghala Muscat, Sultanate of Oman</p>
+          <p>Privacy Ploicy | Terms of use</p>
+          <div class="flex gap-5 my-5 items-center justify-center">
+            <img class="w-6" src="./assets/images/fbicon.png" alt="icon" />
+            <img class="w-6" src="./assets/images/fbicon.png" alt="icon" />
+            <img class="w-6" src="./assets/images/fbicon.png" alt="icon" />
+            <img class="w-6" src="./assets/images/fbicon.png" alt="icon" />
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
